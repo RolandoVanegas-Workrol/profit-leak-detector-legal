@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soporte — Profit Leak Detector</title>
+    <meta name="description" content="Soporte y buenas prácticas de Profit Leak Detector." />
+    <style>
+      :root { color-scheme: light; }
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #0b1220; color: #e8eefc; }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 72px; }
+      .top a { color: #9cc3ff; text-decoration: none; }
+      .top a:hover { text-decoration: underline; }
+      .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 22px; }
+      h1 { font-size: 26px; margin: 0 0 8px; letter-spacing: -0.02em; }
+      h2 { font-size: 16px; margin: 22px 0 10px; }
+      p, li { line-height: 1.65; color: rgba(232,238,252,0.88); }
+      ul { margin: 10px 0; padding-left: 18px; }
+      .muted { color: rgba(232,238,252,0.70); font-size: 13px; }
+      .pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.06); }
+      code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
+      .hr { height: 1px; background: rgba(255,255,255,0.10); margin: 18px 0; }
+      a { color: #9cc3ff; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top muted" style="margin-bottom: 10px;">
+        <a href="./index.html">← Volver</a>
+      </div>
+      <div class="card">
+        <h1>Soporte</h1>
+        <div class="muted">
+          Producto: <strong>Profit Leak Detector</strong> (Shopify app)<br />
+          Contacto: <a href="mailto:info@workrol.com">info@workrol.com</a><br />
+          Última actualización: <code>2026-04-25</code>
+        </div>
+
+        <div class="hr"></div>
+
+        <h2>Cómo contactarnos</h2>
+        <p>
+          Escríbenos a <a href="mailto:info@workrol.com">info@workrol.com</a> indicando:
+          <span class="pill"><code>tu tienda</code> (myshopify.com)</span>
+          <span class="pill"><code>captura</code> del problema</span>
+          <span class="pill"><code>pasos</code> para reproducir</span>.
+        </p>
+
+        <h2>Conexión con Google Search Console</h2>
+        <ul>
+          <li>La App usa OAuth 2.0 para conectarse a tu cuenta de Google y consultar métricas reales de Search Console.</li>
+          <li>Si tu proyecto OAuth está en “Testing”, solo podrán autorizar usuarios de prueba (test users). Para uso con clientes, debe estar “In production”.</li>
+          <li>Luego de conectar, selecciona la propiedad verificada (<code>https://...</code> o <code>sc-domain:...</code>) dentro de la App.</li>
+        </ul>
+
+        <h2>Desinstalación</h2>
+        <p>
+          Puedes desinstalar Profit Leak Detector desde Shopify Admin → Apps. Al desinstalar, la App deja de operar para tu tienda.
+        </p>
+
+        <h2>Eliminación de datos</h2>
+        <p>
+          Si deseas solicitar eliminación de datos (incluyendo tokens OAuth asociados a tu tienda), escribe a
+          <a href="mailto:info@workrol.com">info@workrol.com</a> con el asunto <code>Data Deletion Request</code> e incluye tu
+          dominio <code>*.myshopify.com</code>.
+        </p>
+
+        <h2>Buenas prácticas</h2>
+        <ul>
+          <li>Usa periodos consistentes (por ejemplo 28 días) para comparar tendencias.</li>
+          <li>Si un periodo no tiene datos disponibles en Search Console, verás “Sin datos disponibles para este período”.</li>
+          <li>Activa el App Embed en tu tema si quieres habilitar funcionalidades relacionadas con Online Store.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
