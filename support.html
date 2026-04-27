@@ -1,92 +1,87 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Soporte — Profit Leak Detector</title>
-    <meta name="description" content="Soporte y buenas prácticas de Profit Leak Detector." />
-    <style>
-      :root { color-scheme: light; }
-      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #0b1220; color: #e8eefc; }
-      .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 72px; }
-      .top a { color: #9cc3ff; text-decoration: none; }
-      .top a:hover { text-decoration: underline; }
-      .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 22px; }
-      h1 { font-size: 26px; margin: 0 0 8px; letter-spacing: -0.02em; }
-      h2 { font-size: 16px; margin: 22px 0 10px; }
-      p, li { line-height: 1.65; color: rgba(232,238,252,0.88); }
-      ul { margin: 10px 0; padding-left: 18px; }
-      .muted { color: rgba(232,238,252,0.70); font-size: 13px; }
-      .pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.06); }
-      code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
-      .hr { height: 1px; background: rgba(255,255,255,0.10); margin: 18px 0; }
-      a { color: #9cc3ff; }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="top muted" style="margin-bottom: 10px;">
-        <a href="./index.html">← Volver</a>
-      </div>
-      <div class="card">
-        <h1>Soporte</h1>
-        <div class="muted">
-          Producto: <strong>Profit Leak Detector</strong> (Shopify app)<br />
-          Contacto: <a href="mailto:info@workrol.com">info@workrol.com</a><br />
-          Última actualización: <code>2026-04-26</code>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support · Profit Leak Detector</title>
+<style>
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 760px; margin: 48px auto; padding: 0 24px; color: #202223; line-height: 1.6; }
+  h1 { font-size: 28px; margin-bottom: 8px; }
+  h2 { font-size: 18px; margin-top: 28px; }
+  p, li { font-size: 15px; }
+  .muted { color: #6D7175; }
+  a { color: #2C6ECB; }
+  .card { background: #F6F6F7; border-radius: 8px; padding: 20px; margin: 16px 0; }
+</style>
+</head>
+<body>
+<h1>Support</h1>
+<p class="muted">We respond within one business day. Last updated: April 27, 2026.</p>
 
-        <div class="hr"></div>
+<div class="card">
+  <h2 style="margin-top:0">Contact</h2>
+  <p>
+    <strong>Email:</strong> <a href="mailto:info@workrol.com">info@workrol.com</a><br>
+    <strong>Response time:</strong> 1 business day (Mon–Fri, CST)
+  </p>
+</div>
 
-        <h2>Cómo contactarnos</h2>
-        <p>
-          Escríbenos a <a href="mailto:info@workrol.com">info@workrol.com</a> indicando:
-          <span class="pill"><code>tu tienda</code> (myshopify.com)</span>
-          <span class="pill"><code>captura</code> del problema</span>
-          <span class="pill"><code>pasos</code> para reproducir</span>.
-        </p>
+<h2>Common questions</h2>
 
-        <h2>Conexión con Google Search Console</h2>
-        <ul>
-          <li>La App usa OAuth 2.0 para conectarse a tu cuenta de Google y consultar métricas reales de Search Console.</li>
-          <li>Si tu proyecto OAuth está en “Testing”, solo podrán autorizar usuarios de prueba (test users). Para uso con clientes, debe estar “In production”.</li>
-          <li>Luego de conectar, selecciona la propiedad verificada (<code>https://...</code> o <code>sc-domain:...</code>) dentro de la App.</li>
-        </ul>
+<h3>Billing, annual plans, and refunds</h3>
+<p>
+  In-app charges are processed by <strong>Shopify</strong>. Per-store use, no transfer of
+  subscription to another store, annual prepayment rules, and how refunds are handled are explained
+  in the <a href="terms.html">Terms of Service (section 5)</a>. For billing issues inside Shopify,
+  use Shopify’s support and billing tools as they apply to your account.
+</p>
 
-        <h2>Conexión con Google Analytics 4</h2>
-        <ul>
-          <li>En el Dashboard o en Indexing, haz clic en <strong>Conectar GA4</strong>.</li>
-          <li>La App solicita acceso de solo lectura a Google Analytics para leer métricas agregadas.</li>
-          <li>Luego de autorizar, selecciona la propiedad GA4 correspondiente a tu tienda.</li>
-          <li>Profit Leak Detector usa esos datos para mostrar sesiones orgánicas, conversiones/eventos clave, revenue y páginas de destino en el dashboard.</li>
-        </ul>
+<h3>The AI generation fails on some products</h3>
+<p>
+  Make sure the product has a title. If it still fails, email us the product handle and we'll diagnose.
+  Logs are retained for 7 days.
+</p>
 
-        <h2>Desconectar Google</h2>
-        <p>
-          Puedes desconectar Google Search Console o GA4 dentro de la App. También puedes revocar el acceso directamente desde
-          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
-        </p>
+<h3>How do I activate the JSON-LD structured data?</h3>
+<p>
+  Go to <em>Technical SEO</em> inside the App and click <strong>Activar en mi tema</strong>. The theme
+  editor opens with the app embed pre-selected. Toggle it on and click <strong>Save</strong>.
+</p>
 
-        <h2>Desinstalación</h2>
-        <p>
-          Puedes desinstalar Profit Leak Detector desde Shopify Admin → Apps. Al desinstalar, la App deja de operar para tu tienda.
-        </p>
+<h3>How do I connect Google Search Console?</h3>
+<p>
+  In the <em>Indexing</em> tab, click <strong>Conectar Google Search Console</strong>. You'll be
+  redirected to Google's consent screen. After approval, pick the verified property for your store and
+  click <strong>Enviar sitemap a Google</strong>.
+</p>
 
-        <h2>Eliminación de datos</h2>
-        <p>
-          Si deseas solicitar eliminación de datos (incluyendo tokens OAuth asociados a tu tienda), escribe a
-          <a href="mailto:info@workrol.com">info@workrol.com</a> con el asunto <code>Data Deletion Request</code> e incluye tu
-          dominio <code>*.myshopify.com</code>.
-        </p>
+<h3>How do I connect Google Analytics 4?</h3>
+<p>
+  In the <em>Dashboard</em> or <em>Indexing</em> tab, click <strong>Conectar GA4</strong>. You'll be
+  redirected to Google's consent screen for read-only Analytics access. After approval, select the GA4
+  property for your store. Profit Leak Detector uses this data only to show aggregated organic sessions,
+  conversions, revenue, and landing page performance in your dashboard.
+</p>
 
-        <h2>Buenas prácticas</h2>
-        <ul>
-          <li>Usa periodos consistentes (por ejemplo 28 días) para comparar tendencias.</li>
-          <li>Si un periodo no tiene datos disponibles en Search Console, verás “Sin datos disponibles para este período”.</li>
-          <li>Si GA4 no tiene sesiones orgánicas suficientes en el período seleccionado, el dashboard mostrará “Datos insuficientes” en lugar de inventar conversiones o revenue.</li>
-          <li>Activa el App Embed en tu tema si quieres habilitar funcionalidades relacionadas con Online Store.</li>
-        </ul>
-      </div>
-    </div>
-  </body>
+<h3>How do I disconnect Google access?</h3>
+<p>
+  You can disconnect Google Search Console or GA4 inside the App. You can also revoke access directly
+  from your Google Account permissions page:
+  <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
+</p>
+
+<h3>Uninstall / data deletion</h3>
+<p>
+  Uninstall the App from the Shopify admin. Shopify sends us a <code>shop/redact</code> webhook within
+  ~48 hours and we purge all data associated with your shop. You can also email us to expedite.
+</p>
+
+<h2>Bug reports</h2>
+<p>
+  Include: your myshopify domain, the page where the issue occurred, a screenshot, and the approximate time.
+  Send to <a href="mailto:info@workrol.com">info@workrol.com</a>.
+</p>
+</body>
 </html>

@@ -1,149 +1,134 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Política de Privacidad — Profit Leak Detector</title>
-    <meta name="description" content="Política de Privacidad de Profit Leak Detector." />
-    <style>
-      :root { color-scheme: light; }
-      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #0b1220; color: #e8eefc; }
-      .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 72px; }
-      .top a { color: #9cc3ff; text-decoration: none; }
-      .top a:hover { text-decoration: underline; }
-      .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 22px; }
-      h1 { font-size: 26px; margin: 0 0 8px; letter-spacing: -0.02em; }
-      h2 { font-size: 16px; margin: 22px 0 10px; }
-      p, li { line-height: 1.65; color: rgba(232,238,252,0.88); }
-      ul { margin: 10px 0; padding-left: 18px; }
-      .muted { color: rgba(232,238,252,0.70); font-size: 13px; }
-      code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
-      .hr { height: 1px; background: rgba(255,255,255,0.10); margin: 18px 0; }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="top muted" style="margin-bottom: 10px;">
-        <a href="./index.html">← Volver</a>
-      </div>
-      <div class="card">
-        <h1>Política de Privacidad</h1>
-        <div class="muted">
-          Producto: <strong>Profit Leak Detector</strong> (Shopify app)<br />
-          Responsable: <strong>Workrol</strong><br />
-          Contacto: <a href="mailto:info@workrol.com">info@workrol.com</a><br />
-          Última actualización: <code>2026-04-26</code>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy · Profit Leak Detector</title>
+<style>
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 760px; margin: 48px auto; padding: 0 24px; color: #202223; line-height: 1.6; }
+  h1 { font-size: 28px; margin-bottom: 8px; }
+  h2 { font-size: 18px; margin-top: 28px; }
+  p, li { font-size: 15px; }
+  code { background: #F6F6F7; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  .muted { color: #6D7175; }
+  a { color: #2C6ECB; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: April 27, 2026</p>
 
-        <div class="hr"></div>
+<p>
+  Profit Leak Detector ("we", "us", "the App") is a Shopify application operated by Workrol.
+  This policy explains what data we process when a merchant installs the App on their Shopify store.
+</p>
 
-        <h2>1. Alcance</h2>
-        <p>
-          Esta Política de Privacidad describe cómo Workrol (“Workrol”, “nosotros”) recopila, usa y protege la información
-          cuando un comerciante instala y utiliza Profit Leak Detector (la “App”) en una tienda Shopify.
-        </p>
+<h2>1. What data we access</h2>
+<p>When a merchant authorizes the App, Shopify grants us access to:</p>
+<ul>
+  <li><strong>Products</strong> (<code>read_products</code>, <code>write_products</code>): title, description, images, variants, prices, SEO fields, tags, vendor, type.</li>
+  <li><strong>Orders</strong> (<code>read_orders</code>): order ID, creation date, total price, and line-item product references. We do <strong>not</strong> store customer names, emails, phone numbers, or shipping addresses.</li>
+  <li><strong>Shop metadata</strong>: shop domain, primary URL, email of the shop owner (used only for support correspondence).</li>
+  <li><strong>Google Search Console</strong> (optional, only if the merchant connects): verified site properties, sitemap submission status, and Search Console performance data such as clicks, impressions, click-through rate, average position, pages, and queries for the connected store property.</li>
+  <li><strong>Google Analytics 4</strong> (optional, only if the merchant connects): the list of GA4 properties available to the merchant and aggregated analytics metrics for the selected property, such as organic sessions, key events/conversions, revenue, and top landing pages. We do not read or store individual Google user profiles.</li>
+</ul>
 
-        <h2>2. Qué hace la App</h2>
-        <p>
-          Profit Leak Detector ayuda a comerciantes de Shopify a mejorar su SEO y rendimiento del catálogo mediante análisis,
-          recomendaciones y automatizaciones de optimización. La App puede conectarse a Google Search Console (“GSC”) y
-          Google Analytics 4 (“GA4”) para consultar métricas reales y agregadas de rendimiento orgánico y mostrarlas dentro
-          del panel del comerciante.
-        </p>
+<h2>2. What we do with it</h2>
+<ul>
+  <li>Compute product-level profit metrics (revenue, cost, margin) and surface "leaks" — products that underperform relative to their cost.</li>
+  <li>Generate SEO content (titles, descriptions, alt text, blog articles) using OpenAI's API. Prompts include product fields but never customer data.</li>
+  <li>Analyze technical SEO signals (robots.txt, sitemap.xml, JSON-LD) for the storefront domain.</li>
+  <li>Submit sitemap URLs to Google Search Console on the merchant's behalf (only when connected and explicitly requested).</li>
+  <li>Combine Search Console and GA4 metrics in the merchant dashboard so merchants can understand how organic search traffic relates to sessions, conversions, and revenue.</li>
+</ul>
 
-        <h2>3. Datos que procesamos</h2>
-        <p><strong>3.1 Datos de Shopify (tienda y catálogo)</strong></p>
-        <ul>
-          <li>Identificador de tienda (por ejemplo, <code>*.myshopify.com</code>) y metadatos necesarios para operar la App.</li>
-          <li>Catálogo de productos (títulos, descripciones, imágenes, SEO del producto) para generar análisis y mejoras.</li>
-          <li>Pedidos y líneas de pedido (ventas, descuentos, cantidades) para métricas reales del negocio en el período seleccionado.</li>
-          <li>Configuraciones técnicas relevantes (por ejemplo, estado de activación de un App Embed cuando aplique).</li>
-        </ul>
+<h2>3. Google user data and limited use</h2>
+<p>
+  Google integrations are optional and are initiated only by the merchant through Google's OAuth consent flow.
+  We request the minimum Google scopes needed to provide the connected features:
+</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/webmasters.readonly</code> to read Search Console properties and performance data.</li>
+  <li><code>https://www.googleapis.com/auth/webmasters</code> to submit sitemap URLs when the merchant explicitly clicks the sitemap submission action.</li>
+  <li><code>https://www.googleapis.com/auth/analytics.readonly</code> to read aggregated GA4 metrics and list properties the merchant can select.</li>
+</ul>
+<p>
+  We use Google user data only to provide and improve user-facing SEO, indexing, analytics, and reporting features inside Profit Leak Detector.
+  We do not sell Google user data, use it for advertising, transfer it to data brokers, or use it to train generalized AI models.
+  Our use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.
+</p>
 
-        <p><strong>3.2 Datos de Google Search Console (solo si el comerciante conecta GSC)</strong></p>
-        <ul>
-          <li>Propiedades verificadas disponibles (por ejemplo, <code>https://dominio.com/</code> o <code>sc-domain:dominio.com</code>).</li>
-          <li>Métricas reales: clics, impresiones, CTR, posición media.</li>
-          <li>Dimensiones y listados según disponibilidad de la API: consultas (queries), páginas (pages), y series por fecha.</li>
-        </ul>
+<h2>4. Third-party processors</h2>
+<ul>
+  <li><strong>OpenAI</strong> — receives product titles, descriptions, and related fields for SEO/blog generation. OpenAI's policy: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>. API data is not used for model training.</li>
+  <li><strong>Supabase</strong> (PostgreSQL) — hosts the operational database (products, orders, optimization history). Data is encrypted at rest.</li>
+  <li><strong>Railway</strong> — runs the backend API. TLS in transit.</li>
+  <li><strong>Google</strong> — when the merchant connects Google Search Console or GA4, we call Google APIs using OAuth tokens that the merchant authorized. Google data is used only for the connected merchant's own dashboard and reports.</li>
+</ul>
 
-        <p><strong>3.3 Datos de Google Analytics 4 (solo si el comerciante conecta GA4)</strong></p>
-        <ul>
-          <li>Propiedades GA4 disponibles para que el comerciante seleccione la propiedad correcta de su tienda.</li>
-          <li>Métricas agregadas: sesiones orgánicas, eventos clave/conversiones, revenue y páginas de destino principales.</li>
-          <li>No leemos ni almacenamos perfiles individuales de usuarios de Google ni datos personales de visitantes desde GA4.</li>
-        </ul>
+<h2>4a. Internal error monitoring and product analytics</h2>
+<p>
+  We may log <strong>sanitized</strong> error reports (e.g. route, HTTP status, message, request correlation id, and optional shop domain) to operate and improve reliability.
+  We do not store Shopify access tokens, API keys, full customer PII, or unredacted sensitive headers in these logs.
+  For internal product understanding, we may record <strong>aggregated</strong> usage events (e.g. plan view, billing flow milestones, onboarding completion) with no marketing profiling outside what you explicitly allow below.
+</p>
 
-        <p><strong>3.4 Tokens OAuth</strong></p>
-        <p>
-          Para conectar GSC y GA4 usamos OAuth 2.0. Al autorizar, Google entrega un <em>access token</em> y normalmente un <em>refresh token</em>.
-          Guardamos estos tokens asociados a la tienda del comerciante para poder renovar acceso automáticamente y evitar pedir autorización
-          en cada consulta. Los tokens se almacenan cifrados y separados por tienda.
-        </p>
+<h2>4b. Store contact email and marketing</h2>
+<p>
+  The App may use the <strong>shop/business contact email</strong> available from Shopify (with appropriate API access) to operate the service, security notices, and support.
+  <strong>Marketing or promotional email</strong> (tips, product updates) is sent <strong>only if</strong> the merchant opts in through a clear in-app control (e.g. Settings → Privacy & data, or a checkbox in onboarding) and the consent is stored with date and source.
+  Merchants can withdraw consent and unsubscribe at any time, including through an unsubscribe link we provide, without affecting the core functionality of the App.
+</p>
 
-        <h2>4. Finalidad del uso</h2>
-        <ul>
-          <li>Operar la App y mostrar métricas y reportes al comerciante.</li>
-          <li>Listar propiedades verificadas de GSC y permitir que el comerciante seleccione la correcta.</li>
-          <li>Consultar métricas reales de GSC para el período seleccionado.</li>
-          <li>Listar propiedades GA4 y consultar métricas agregadas de tráfico orgánico, conversiones y revenue para el período seleccionado.</li>
-          <li>Generar análisis y recomendaciones de SEO basadas en datos reales de Shopify, GSC y, si aplica, GA4.</li>
-          <li>Cruzar datos de Search Console y GA4 para mostrar al comerciante cómo el tráfico orgánico se relaciona con resultados reales de negocio.</li>
-          <li>Seguridad, prevención de abuso, soporte y mejora del producto.</li>
-        </ul>
+<h2>4c. App subscriptions and payment processing</h2>
+<p>
+  Paid plans, when offered, are charged through the <strong>Shopify Billing API</strong>. <strong>Shopify</strong> (not Workrol) processes the payment. We do not receive full payment card numbers. For
+  <strong>refunds, transferability of the license between stores, annual prepayment, and the role of Shopify as payment processor</strong>, see section 5 of our
+  <a href="terms.html">Terms of Service</a>.
+</p>
 
-        <h2>5. Datos de Google y uso limitado</h2>
-        <p>
-          Las integraciones con Google son opcionales y solo se activan cuando el comerciante las autoriza mediante la pantalla de consentimiento OAuth de Google.
-          Solicitamos los permisos mínimos necesarios para prestar las funciones conectadas:
-        </p>
-        <ul>
-          <li><code>https://www.googleapis.com/auth/webmasters.readonly</code>: leer propiedades y datos de rendimiento de Search Console.</li>
-          <li><code>https://www.googleapis.com/auth/webmasters</code>: enviar sitemaps cuando el comerciante solicita explícitamente esa acción.</li>
-          <li><code>https://www.googleapis.com/auth/analytics.readonly</code>: leer métricas agregadas de GA4 y listar propiedades disponibles.</li>
-        </ul>
-        <p>
-          Usamos los datos recibidos desde APIs de Google solo para mostrar reportes, métricas y funciones de SEO/analytics dentro de Profit Leak Detector.
-          No vendemos datos de Google, no los usamos para publicidad, no los transferimos a data brokers y no los usamos para entrenar modelos generales de IA.
-          Nuestro uso y transferencia de información recibida desde APIs de Google cumple con la
-          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Datos de Usuario de los Servicios API de Google</a>,
-          incluyendo los requisitos de Limited Use.
-        </p>
+<h2>5. Storage and retention</h2>
+<ul>
+  <li>Access tokens (Shopify offline token and Google OAuth refresh tokens) are stored encrypted with AES-256-GCM.</li>
+  <li>Product and order aggregates are retained while the App is installed.</li>
+  <li>Google Search Console and GA4 metrics may be cached or stored as merchant-level aggregated reporting data. We do not store raw personal Google account data.</li>
+  <li>When the merchant uninstalls the App, Shopify sends a <code>shop/redact</code> webhook within ~48 hours. On receipt we delete every row associated with the shop from our database.</li>
+</ul>
 
-        <h2>6. Seguridad</h2>
-        <p>
-          Implementamos medidas razonables para proteger la información. Los tokens OAuth se almacenan de forma segura y
-          se protegen para prevenir accesos no autorizados.
-        </p>
+<h2>6. Disconnecting Google</h2>
+<p>
+  Merchants can disconnect Google Search Console or GA4 inside the App. Disconnecting removes the stored Google OAuth token for that integration and stops future Google API access.
+  Merchants can also revoke access at any time from their Google Account permissions page:
+  <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
+</p>
 
-        <h2>7. Retención y eliminación</h2>
-        <p>
-          Conservamos datos mientras la App esté instalada o sea necesario para prestar el servicio, cumplir obligaciones legales
-          o resolver incidencias. El comerciante puede desinstalar la App; tras ello, eliminaremos o anonimizaremos datos asociados
-          dentro de plazos razonables, salvo retención requerida por ley.
-        </p>
+<h2>7. GDPR / CCPA compliance</h2>
+<p>
+  We comply with Shopify's three mandatory compliance webhooks:
+  <code>customers/data_request</code>, <code>customers/redact</code>, and <code>shop/redact</code>.
+  Because we do not store customer personal data, a <code>customers/redact</code> request is typically a no-op, but it is always logged and acknowledged.
+</p>
 
-        <h2>8. Compartición con terceros</h2>
-        <p>
-          No vendemos datos. Podemos compartir información limitada con proveedores de infraestructura (hosting, base de datos, monitoreo)
-          únicamente para operar la App, y cuando sea requerido por ley.
-        </p>
+<h2>8. Data subject requests</h2>
+<p>
+  Merchants and end-customers can request access, correction, or deletion of personal data by emailing
+  <a href="mailto:info@workrol.com">info@workrol.com</a>. We respond within 30 days.
+</p>
 
-        <h2>9. Tus opciones</h2>
-        <ul>
-          <li>Puedes conectar o desconectar Google Search Console desde la App.</li>
-          <li>Puedes conectar o desconectar Google Analytics 4 desde la App.</li>
-          <li>Puedes seleccionar o cambiar la propiedad de GSC asociada a tu tienda.</li>
-          <li>Puedes seleccionar o cambiar la propiedad GA4 asociada a tu tienda.</li>
-          <li>Puedes revocar el acceso de Google en cualquier momento desde <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
-          <li>Puedes solicitar soporte escribiendo a <a href="mailto:info@workrol.com">info@workrol.com</a>.</li>
-        </ul>
+<h2>9. Changes to this policy</h2>
+<p>
+  We will post updates to this page and notify active merchants via the email associated with the Shopify shop if a material change affects how their data is processed.
+</p>
 
-        <h2>10. Cambios a esta política</h2>
-        <p>
-          Podemos actualizar esta política. Publicaremos la versión vigente en este sitio y actualizaremos la fecha de “Última actualización”.
-        </p>
-      </div>
-    </div>
-  </body>
+<h2>10. Contact</h2>
+<p>
+  Workrol — Profit Leak Detector<br>
+  Email: <a href="mailto:info@workrol.com">info@workrol.com</a><br>
+  Website: <a href="https://workrol.com" target="_blank" rel="noopener">workrol.com</a>
+</p>
+</body>
 </html>

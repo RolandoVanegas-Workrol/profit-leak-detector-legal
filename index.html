@@ -1,45 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
+<!-- Origen: repo Profit-Leak-Detector → backend/public/legal/index.html
+     Si legal.workrol.com muestra otra fecha, el servidor NO está usando este archivo:
+     súbelo por FTP/cPanel al docroot del subdominio legal (reemplaza index.html). -->
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Profit Leak Detector — Legal</title>
-    <meta name="description" content="Páginas legales de Profit Leak Detector (Shopify app)." />
-    <style>
-      :root { color-scheme: light; }
-      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #0b1220; color: #e8eefc; }
-      .wrap { max-width: 960px; margin: 0 auto; padding: 56px 20px; }
-      .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 20px; }
-      a { color: #9cc3ff; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-      h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: -0.02em; }
-      p { margin: 0 0 14px; line-height: 1.6; color: rgba(232,238,252,0.88); }
-      ul { margin: 12px 0 0; padding-left: 18px; }
-      li { margin: 8px 0; }
-      .muted { color: rgba(232,238,252,0.70); font-size: 13px; }
-      .footer { margin-top: 18px; }
-      code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="card">
-        <h1>Profit Leak Detector — Legal</h1>
-        <p>
-          Este sitio publica las páginas legales de <strong>Profit Leak Detector</strong>, una app de Shopify que
-          puede conectarse a Google Search Console y Google Analytics 4 para mostrar métricas reales y agregadas
-          de SEO, sesiones orgánicas, conversiones y revenue dentro del panel del comerciante.
-        </p>
-        <ul>
-          <li><a href="./privacy.html">Política de Privacidad</a></li>
-          <li><a href="./terms.html">Términos de Servicio</a></li>
-          <li><a href="./support.html">Soporte</a></li>
-        </ul>
-        <div class="footer muted">
-          Soporte: <a href="mailto:info@workrol.com">info@workrol.com</a><br />
-          Última actualización: <code>2026-04-26</code>
-        </div>
-      </div>
-    </div>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<title>Profit Leak Detector — Legal</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 640px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 28px 32px;
+  }
+  h1 { font-size: 24px; margin: 0 0 12px; font-weight: 600; }
+  p, li { font-size: 15px; color: #c9d1d9; }
+  .muted { color: #8b949e; font-size: 14px; margin-top: 20px; }
+  .fecha-box {
+    margin-top: 20px; padding: 12px 14px; background: #21262d; border: 1px solid #30363d;
+    border-radius: 8px; font-size: 16px; color: #e6edf3;
+  }
+  .fecha-box strong { color: #58a6ff; font-size: 17px; }
+  a { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 1.2em; margin: 16px 0; }
+  code { font-size: 13px; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Profit Leak Detector — Legal</h1>
+  <p>
+    Este sitio publica las páginas legales de <strong>Profit Leak Detector</strong>, una app de Shopify que puede conectarse a Google Search Console y Google Analytics 4 para mostrar métricas reales y agregadas de SEO, sesiones orgánicas, conversiones y revenue dentro del panel del comerciante.
+  </p>
+  <ul>
+    <li><a href="privacy.html">Política de privacidad</a></li>
+    <li><a href="terms.html">Términos de servicio</a></li>
+    <li><a href="support.html">Soporte</a></li>
+  </ul>
+  <p class="muted">Soporte: <a href="mailto:info@workrol.com">info@workrol.com</a></p>
+  <div class="fecha-box" id="ultima-actualizacion">
+    Última actualización: <strong>27 de abril de 2026</strong> · Workrol
+  </div>
+  <p class="muted" style="font-size: 13px; margin-top: 16px;">
+    Las mismas páginas están disponibles en el dominio de la app bajo <code>/legal/</code> para revisión de Shopify. Los términos incluyen condiciones de facturación (Shopify), licencia por tienda y planes anuales.
+  </p>
+</div>
+</body>
 </html>
