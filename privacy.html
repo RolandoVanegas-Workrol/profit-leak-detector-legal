@@ -32,7 +32,7 @@
           Producto: <strong>Profit Leak Detector</strong> (Shopify app)<br />
           Responsable: <strong>Workrol</strong><br />
           Contacto: <a href="mailto:info@workrol.com">info@workrol.com</a><br />
-          Última actualización: <code>2026-04-25</code>
+          Última actualización: <code>2026-04-26</code>
         </div>
 
         <div class="hr"></div>
@@ -46,8 +46,9 @@
         <h2>2. Qué hace la App</h2>
         <p>
           Profit Leak Detector ayuda a comerciantes de Shopify a mejorar su SEO y rendimiento del catálogo mediante análisis,
-          recomendaciones y automatizaciones de optimización. La App puede conectarse a Google Search Console (“GSC”) para
-          consultar métricas reales de rendimiento orgánico y mostrarlas dentro del panel del comerciante.
+          recomendaciones y automatizaciones de optimización. La App puede conectarse a Google Search Console (“GSC”) y
+          Google Analytics 4 (“GA4”) para consultar métricas reales y agregadas de rendimiento orgánico y mostrarlas dentro
+          del panel del comerciante.
         </p>
 
         <h2>3. Datos que procesamos</h2>
@@ -66,11 +67,18 @@
           <li>Dimensiones y listados según disponibilidad de la API: consultas (queries), páginas (pages), y series por fecha.</li>
         </ul>
 
-        <p><strong>3.3 Tokens OAuth</strong></p>
+        <p><strong>3.3 Datos de Google Analytics 4 (solo si el comerciante conecta GA4)</strong></p>
+        <ul>
+          <li>Propiedades GA4 disponibles para que el comerciante seleccione la propiedad correcta de su tienda.</li>
+          <li>Métricas agregadas: sesiones orgánicas, eventos clave/conversiones, revenue y páginas de destino principales.</li>
+          <li>No leemos ni almacenamos perfiles individuales de usuarios de Google ni datos personales de visitantes desde GA4.</li>
+        </ul>
+
+        <p><strong>3.4 Tokens OAuth</strong></p>
         <p>
-          Para conectar GSC usamos OAuth 2.0. Al autorizar, Google entrega un <em>access token</em> y normalmente un <em>refresh token</em>.
+          Para conectar GSC y GA4 usamos OAuth 2.0. Al autorizar, Google entrega un <em>access token</em> y normalmente un <em>refresh token</em>.
           Guardamos estos tokens asociados a la tienda del comerciante para poder renovar acceso automáticamente y evitar pedir autorización
-          en cada consulta.
+          en cada consulta. Los tokens se almacenan cifrados y separados por tienda.
         </p>
 
         <h2>4. Finalidad del uso</h2>
@@ -78,37 +86,60 @@
           <li>Operar la App y mostrar métricas y reportes al comerciante.</li>
           <li>Listar propiedades verificadas de GSC y permitir que el comerciante seleccione la correcta.</li>
           <li>Consultar métricas reales de GSC para el período seleccionado.</li>
-          <li>Generar análisis y recomendaciones de SEO basadas en datos reales de Shopify y, si aplica, GSC.</li>
+          <li>Listar propiedades GA4 y consultar métricas agregadas de tráfico orgánico, conversiones y revenue para el período seleccionado.</li>
+          <li>Generar análisis y recomendaciones de SEO basadas en datos reales de Shopify, GSC y, si aplica, GA4.</li>
+          <li>Cruzar datos de Search Console y GA4 para mostrar al comerciante cómo el tráfico orgánico se relaciona con resultados reales de negocio.</li>
           <li>Seguridad, prevención de abuso, soporte y mejora del producto.</li>
         </ul>
 
-        <h2>5. Seguridad</h2>
+        <h2>5. Datos de Google y uso limitado</h2>
+        <p>
+          Las integraciones con Google son opcionales y solo se activan cuando el comerciante las autoriza mediante la pantalla de consentimiento OAuth de Google.
+          Solicitamos los permisos mínimos necesarios para prestar las funciones conectadas:
+        </p>
+        <ul>
+          <li><code>https://www.googleapis.com/auth/webmasters.readonly</code>: leer propiedades y datos de rendimiento de Search Console.</li>
+          <li><code>https://www.googleapis.com/auth/webmasters</code>: enviar sitemaps cuando el comerciante solicita explícitamente esa acción.</li>
+          <li><code>https://www.googleapis.com/auth/analytics.readonly</code>: leer métricas agregadas de GA4 y listar propiedades disponibles.</li>
+        </ul>
+        <p>
+          Usamos los datos recibidos desde APIs de Google solo para mostrar reportes, métricas y funciones de SEO/analytics dentro de Profit Leak Detector.
+          No vendemos datos de Google, no los usamos para publicidad, no los transferimos a data brokers y no los usamos para entrenar modelos generales de IA.
+          Nuestro uso y transferencia de información recibida desde APIs de Google cumple con la
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Datos de Usuario de los Servicios API de Google</a>,
+          incluyendo los requisitos de Limited Use.
+        </p>
+
+        <h2>6. Seguridad</h2>
         <p>
           Implementamos medidas razonables para proteger la información. Los tokens OAuth se almacenan de forma segura y
           se protegen para prevenir accesos no autorizados.
         </p>
 
-        <h2>6. Retención y eliminación</h2>
+        <h2>7. Retención y eliminación</h2>
         <p>
           Conservamos datos mientras la App esté instalada o sea necesario para prestar el servicio, cumplir obligaciones legales
           o resolver incidencias. El comerciante puede desinstalar la App; tras ello, eliminaremos o anonimizaremos datos asociados
           dentro de plazos razonables, salvo retención requerida por ley.
         </p>
 
-        <h2>7. Compartición con terceros</h2>
+        <h2>8. Compartición con terceros</h2>
         <p>
           No vendemos datos. Podemos compartir información limitada con proveedores de infraestructura (hosting, base de datos, monitoreo)
           únicamente para operar la App, y cuando sea requerido por ley.
         </p>
 
-        <h2>8. Tus opciones</h2>
+        <h2>9. Tus opciones</h2>
         <ul>
           <li>Puedes conectar o desconectar Google Search Console desde la App.</li>
+          <li>Puedes conectar o desconectar Google Analytics 4 desde la App.</li>
           <li>Puedes seleccionar o cambiar la propiedad de GSC asociada a tu tienda.</li>
+          <li>Puedes seleccionar o cambiar la propiedad GA4 asociada a tu tienda.</li>
+          <li>Puedes revocar el acceso de Google en cualquier momento desde <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
           <li>Puedes solicitar soporte escribiendo a <a href="mailto:info@workrol.com">info@workrol.com</a>.</li>
         </ul>
 
-        <h2>9. Cambios a esta política</h2>
+        <h2>10. Cambios a esta política</h2>
         <p>
           Podemos actualizar esta política. Publicaremos la versión vigente en este sitio y actualizaremos la fecha de “Última actualización”.
         </p>
